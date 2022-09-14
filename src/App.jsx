@@ -4,7 +4,7 @@ import CardForm from './Components/CardForm';
 
 const App = () => {
     return (
-        <div>
+        <div className="">
             <CardBG />
             <CardForm />
         </div>
