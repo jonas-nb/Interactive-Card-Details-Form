@@ -4,8 +4,16 @@ import { useState } from 'react';
 import { MyContext } from '../Context';
 
 const CardForm = () => {
-    let { cardCvc, setCardCvc, cardNumber, setCardNumber } =
-        useContext(MyContext);
+    let {
+        setCardCvc,
+        setCardDateFirst,
+        setCardDateSecond,
+        setCardName,
+        setCardNumber,
+        cardName,
+    } = useContext(MyContext);
+    console.log(cardName.length);
+    cardName.length === 28 ? alert('oi') : '';
 
     return (
         <div className="">
@@ -16,6 +24,8 @@ const CardForm = () => {
                         type="text"
                         placeholder="e.g. Jane Appleseed"
                         name="CardName"
+                        maxLength={28}
+                        onChange={(e) => setCardName(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col">
@@ -46,6 +56,7 @@ const CardForm = () => {
                                 type="text"
                                 placeholder="YY"
                                 id="date"
+                                onChange={(e) => set}
                             />
                         </div>
                     </div>

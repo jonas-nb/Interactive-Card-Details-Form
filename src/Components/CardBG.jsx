@@ -9,8 +9,7 @@ import { MyContext } from '../Context';
 
 const Container = styled.div`
     margin: auto;
-
-    height: 220px;
+    height: 245px;
     background-image: url(${BgCardMobile});
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,29 +32,28 @@ const CardBG = () => {
         useContext(MyContext);
 
     return (
-        <Container className="w-full uppercase text-white border">
-            <div className="m-auto max-w-[375px] border">
-                <CardBackContainer className="z-10 h-[8rem] bg-contain bg-no-repeat relative top-[1.6rem] left-[3.3rem]">
-                    <div className="relative top-[3.7rem] left-[11.5rem] font-[500]">
+        <Container className="w-full h-10 uppercase text-white">
+            <div className="m-auto max-w-[375px] border-t border-transparent">
+                <CardBackContainer className="z-10 h-[10rem] bg-contain bg-no-repeat m-auto ml-[4rem] mt-8 border border-transparent">
+                    <div className="tracking-[.15em] text-[0.7rem] font-[400]  h-5 w-6 ml-[14rem] mt-[4.3rem] flex items-center justify-center">
                         {cardCvc}
                     </div>
                 </CardBackContainer>
-                <CardFrontContainer className="text-sm z-50 h-[8rem] bg-contain bg-no-repeat relative bottom-[1.9rem] left-[0.7rem] grid grid-cols-1 grid-rows-3">
-                    <img
-                        className="w-11 relative top-5 left-6"
-                        src={CardIcon}
-                        alt=""
-                    />
-                    <div className="tracking-[.15em] relative top-6 left-5">{`${cardNumber.substring(
+                <CardFrontContainer className="border-t border-transparent text-sm z-50 h-[10rem] bg-contain bg-no-repeat ml-4 relative bottom-[4.4rem]">
+                    <div className="mt-4 ml-4">
+                        <img className="h-[1.97rem] " src={CardIcon} alt="" />
+                    </div>
+
+                    <div className="h-8 tracking-[.15em] text-lg w-[18.1rem] mt-8 flex justify-center">{`${cardNumber.substring(
                         0,
                         4
                     )} ${cardNumber.substring(4, 8)} ${cardNumber.substring(
                         8,
                         12
                     )} ${cardNumber.substring(12, 16)}`}</div>
-                    <div className="w-[20rem] flex justify-around items-center text-[0.6rem] relative right-[3rem]">
-                        <div className="relative left-4">{cardName}</div>
-                        <div className="relative right-2">
+                    <div className="w-[18.1rem] flex justify-between items-center text-[0.6rem] tracking-[0.06rem] mt-3">
+                        <div className="ml-5">{cardName}</div>
+                        <div className="mr-5">
                             {cardDateFirst}/{cardDateSecond}
                         </div>
                     </div>
