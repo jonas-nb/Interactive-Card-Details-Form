@@ -9,7 +9,7 @@ import { MyContext } from '../Context';
 
 const Container = styled.div`
     margin: auto;
-    height: 245px;
+    height: 210px;
     background-image: url(${BgCardMobile});
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,17 +34,17 @@ const CardBG = () => {
     return (
         <Container className="w-full h-10 uppercase text-white">
             <div className="m-auto max-w-[375px] border-t border-transparent">
-                <CardBackContainer className="z-10 h-[10rem] bg-contain bg-no-repeat m-auto ml-[4rem] mt-8 border border-transparent">
-                    <div className="tracking-[.15em] text-[0.7rem] font-[400]  h-5 w-6 ml-[14rem] mt-[4.3rem] flex items-center justify-center">
+                <CardBackContainer className="z-10 h-[9rem] bg-contain bg-no-repeat m-auto ml-[6rem] mt-5 border border-transparent">
+                    <div className="tracking-[.15em] text-[0.7rem] font-[400]  h-5 w-6 ml-[12.5rem] mt-[3.8rem] flex items-center justify-center">
                         {cardCvc}
                     </div>
                 </CardBackContainer>
-                <CardFrontContainer className="border-t border-transparent text-sm z-50 h-[10rem] bg-contain bg-no-repeat ml-4 relative bottom-[4.4rem]">
-                    <div className="mt-4 ml-4">
+                <CardFrontContainer className="border-t border-transparent text-sm z-50 h-[9rem] bg-contain bg-no-repeat ml-4 relative bottom-[4rem]">
+                    <div className="mt-5 ml-5">
                         <img className="h-[1.97rem] " src={CardIcon} alt="" />
                     </div>
 
-                    <div className="h-8 tracking-[.15em] text-lg w-[18.1rem] mt-8 flex justify-center">{`${cardNumber.substring(
+                    <div className="h-8 tracking-[.15em] text-[1rem] w-[16.3rem] mt-5 flex justify-center">{`${cardNumber.substring(
                         0,
                         4
                     )} ${cardNumber.substring(4, 8)} ${cardNumber.substring(
@@ -52,8 +52,8 @@ const CardBG = () => {
                         12
                     )} ${cardNumber.substring(12, 16)}`}</div>
                     <div className="w-[18.1rem] flex justify-between items-center text-[0.6rem] tracking-[0.06rem] mt-3">
-                        <div className="ml-5">{cardName}</div>
-                        <div className="mr-5">
+                        <div className="ml-6">{cardName}</div>
+                        <div className="mr-14">
                             {cardDateFirst}/{cardDateSecond}
                         </div>
                     </div>
