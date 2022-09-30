@@ -68,7 +68,7 @@ const CardForm = () => {
     };
     return (
         <div className="">
-            <form className="flex flex-col mt-20 max-w-[320px] m-auto uppercase tracking-[0.07rem] text-[0.8rem]">
+            <form className="flex flex-col mt-20 xl:mt-32 max-w-[320px] m-auto uppercase tracking-[0.07rem] text-[0.8rem]">
                 <div className="flex flex-col">
                     <label
                         htmlFor="inputname"
@@ -85,6 +85,7 @@ const CardForm = () => {
                         id="inputname"
                         type="text"
                         required
+                        maxLength={27}
                         placeholder="e.g. Jane Appleseed"
                         name="CardName"
                         onChange={(e) => setCardName(e.target.value)}

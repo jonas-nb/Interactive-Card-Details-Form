@@ -3,9 +3,11 @@ import CardBG from './CardBG';
 import CardForm from './CardForm';
 const MainComponent = () => {
     return (
-        <div>
+        <div className="xl:grid xl:grid-cols-2">
             <CardBG />
-            <CardForm />
+            <div className=" xl:place-self-start">
+                <CardForm />
+            </div>
         </div>
     );
 };
