@@ -59,7 +59,7 @@ const CardBG = () => {
                         8,
                         12
                     )} ${cardNumber.substring(12, 16)}`}</div>
-                    <div className="w-[18.1rem] xl:w-full flex justify-between items-center text-[0.6rem] xl:text-[0.rem] tracking-[0.06rem] mt-1 xl:mt-5">
+                    <div className="w-[18.1rem] xl:w-full flex justify-between items-center text-[0.6rem] tracking-[0.06rem] mt-1 xl:mt-5">
                         <div className="ml-8 xl:ml-10">{cardName}</div>
                         <div className="mr-16 xl:mr-24">
                             {cardDateFirst}/{cardDateSecond}
