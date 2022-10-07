@@ -1,6 +1,6 @@
 <h1 align='center'>Interactive card details form</h1>
 </br>
-<p align='center'>Usando um layout responsivo e técnica de state-management, portfólio construído para divulgação de meus projetos pessoais</p>
+<p align='center'>Formulário criado com react, usando javascript para validação</p>
 
 <img src='src/assets/images/app.png/'>
 <br/>
@@ -15,7 +15,7 @@
 Instale Meu Portfólio com npm
 
 ```bash
-  git clone https://github.com/jonas-nb/MeuPortfolio
+  git clone https://github.com/jonas-nb/Interactive-Card-Details-Form
   cd InteractiveCard
   npm install
   npm start
